@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
-import pickle
+import pickle 
+import sklearn
+from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
 model = pickle.load(open('diabeticmodel.pkl', 'rb'))
