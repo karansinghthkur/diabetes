@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
+import requests
 import pickle 
 import sklearn
 from sklearn.preprocessing import StandardScaler
@@ -39,4 +40,4 @@ def predict():
     return render_template('index.html', prediction_text='{}'.format(output))
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
