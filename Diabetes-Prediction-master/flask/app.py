@@ -4,6 +4,7 @@ from flask import Flask, request, render_template
 import requests
 import pickle 
 import sklearn
+import jsonify
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
